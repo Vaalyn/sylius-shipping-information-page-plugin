@@ -1,0 +1,4 @@
+suites:
+    main:
+        namespace: VaaChar\VaaCharSyliusShippingInformationPagePlugin
+        psr4_prefix: VaaChar\VaaCharSyliusShippingInformationPagePlugin
