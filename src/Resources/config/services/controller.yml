@@ -1,0 +1,7 @@
+services:
+    vaachar_sylius_shipping_information_page.controller.page:
+        class: VaaChar\VaaCharSyliusShippingInformationPagePlugin\Controller\ShippingInformationPageController
+        public: true
+        arguments:
+            - "@sylius.context.channel"
+            - "@sylius.repository.shipping_method"

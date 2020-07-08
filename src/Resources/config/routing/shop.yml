@@ -1,0 +1,5 @@
+vaachar_sylius_shipping_information_page:
+    path: /shipping-information
+    defaults:
+        _controller: vaachar_sylius_shipping_information_page.controller.page:showAction
+        name: ~
