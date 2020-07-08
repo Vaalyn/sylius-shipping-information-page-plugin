@@ -37,7 +37,7 @@ final class ShippingInformationPageController extends AbstractController
 
         return $this->render(
             '@VaaCharSyliusShippingInformationPagePlugin/show.html.twig',
-        ['shippingMethods' => $shippingMethods]
+            ['shippingMethods' => $shippingMethods]
         );
     }
 }
