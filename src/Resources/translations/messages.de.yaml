@@ -1,0 +1,8 @@
+vaachar:
+    shipping:
+        page:
+            destinations: Zielorte
+            link_text: Versandkosten
+            shipping_information_page_header: Versandkosten
+            shipping_method: Versandart
+            shipping_price: Preis

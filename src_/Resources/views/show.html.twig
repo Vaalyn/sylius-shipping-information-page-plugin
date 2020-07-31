@@ -1,0 +1,13 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block content %}
+    <div class="ui inverted padded segment">
+        <h1 class="ui inverted center aligned header"></h1>
+
+        <div class="ui divider"></div>
+
+        {% for shippingMethod in shippingMethods %}
+            {{ dump(shippingMethod) }}
+        {% endfor %}
+    </div>
+{% endblock %}

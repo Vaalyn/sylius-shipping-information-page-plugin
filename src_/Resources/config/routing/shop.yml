@@ -1,7 +1,5 @@
 vaachar_sylius_shipping_information_page:
-    path:
-        de_DE: /versandkosten
-        en_US: /shipping-prices
+    path: /shipping-information
     defaults:
         _controller: vaachar_sylius_shipping_information_page.controller.page:showAction
         name: ~

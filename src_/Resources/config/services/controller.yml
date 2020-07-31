@@ -4,5 +4,4 @@ services:
         public: true
         arguments:
             - "@sylius.context.channel"
-            - "@sylius.context.locale"
             - "@sylius.repository.shipping_method"

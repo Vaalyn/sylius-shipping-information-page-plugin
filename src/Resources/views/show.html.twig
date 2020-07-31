@@ -1,13 +1,37 @@
 {% extends '@SyliusShop/layout.html.twig' %}
 
+{% import "@SyliusShop/Common/Macro/money.html.twig" as money %}
+{% import '@SyliusUi/Macro/flags.html.twig' as flags %}
+
 {% block content %}
     <div class="ui inverted padded segment">
-        <h1 class="ui inverted center aligned header"></h1>
+        <h1 class="ui inverted center aligned header">{{ 'vaachar.shipping.page.shipping_information_page_header'|trans }}</h1>
 
         <div class="ui divider"></div>
 
-        {% for shippingMethod in shippingMethods %}
-            {{ dump(shippingMethod) }}
-        {% endfor %}
+        <table class="ui celled inverted table">
+            <thead>
+                <tr>
+                    <th>{{ 'vaachar.shipping.page.shipping_method'|trans }}</th>
+                    <th>{{ 'vaachar.shipping.page.destinations'|trans }}</th>
+                    <th>{{ 'vaachar.shipping.page.shipping_price'|trans }}</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for shippingMethodData in shippingMethodsWithResolvedMembers %}
+                <tr>
+                    <td>{{ shippingMethodData.name }}</td>
+                    <td>
+                        <div class="ui list">
+                            {% for member in shippingMethodData.members %}
+                                <div class="item">{{ flags.fromCountryCode(member.code) }}{{ member.code|sylius_country_name }}</div>
+                            {% endfor %}
+                        </div>
+                    </td>
+                    <td>{{ money.convertAndFormat(shippingMethodData.amount) }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
     </div>
 {% endblock %}

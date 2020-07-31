@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@VaaCharSyliusShippingInformationPagePlugin/Resources/config/services.yml" }

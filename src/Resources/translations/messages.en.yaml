@@ -1,0 +1,8 @@
+vaachar:
+    shipping:
+        page:
+            destinations: Destinations
+            link_text: Shipping Prices
+            shipping_information_page_header: Shipping Prices
+            shipping_method: Shipping method
+            shipping_price: Shipping price
