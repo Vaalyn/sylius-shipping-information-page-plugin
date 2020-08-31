@@ -1,7 +1,0 @@
-vaachar_sylius_shipping_information_page_plugin_admin:
-    resource: "@VaaCharSyliusShippingInformationPagePlugin/Resources/config/routing/admin.yml"
-    prefix: /admin
-
-vaachar_sylius_shipping_information_page_plugin_shop:
-    resource: "@VaaCharSyliusShippingInformationPagePlugin/Resources/config/routing/shop.yml"
-    prefix: /{_locale}
